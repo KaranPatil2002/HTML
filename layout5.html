@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .header{
+            width:100%;
+            height: 1430px;
+            border: 13px solid #019ef3;
+        }
+        .head-div{
+            width: 94%;
+            height: 60px;
+           /* border: 1px solid #000; */
+           margin-left: 40px;
+            
+        }
+        .head-div h1{
+            width: 20;
+            height: 40px;
+            /* border: solid #000; */
+            margin-right: 10px;
+            margin-top: 5px;
+            float: left;
+        }
+        .nav-div{
+            width: 60%;
+            height: 30px;
+          /* border: 1px solid #000; */
+            float: left;
+            margin-top: 15px;
+        }
+        .nav-div a{
+            font-size: large;
+            color: aqua;
+            text-decoration: none;
+            margin-left: 91px;
+            padding-bottom: 7px;
+            
+        }
+        .nav-div a:hover{
+            background-color: rgb(10, 98, 102);
+            color:white;
+        }
+        .head-div h3{
+            width: 15%;
+            height: 30px;
+           /* border: solid #000; */
+            margin-left: 25px;
+            margin-top: 15px;
+            float: right;
+        }
+        .page{
+            width: 94%;
+            height: 400px;
+           /* border: 1px solid #000; */
+            margin-top: 10px;
+            margin-left: 35px;
+            
+        }
+        .page-div{
+            width: 53%;
+            height: 300px;
+           /* border: 1px solid #000; */
+            margin-right: 20px;
+            float: left;
+        }
+        .vedio-div{
+            width: 40%;
+            height: 380px;
+            /* border: 1px solid #000; */
+            margin-left: 760px;
+         
+        }
+        .page-div h1  {
+            width: 40%;
+            height: 50px;
+           /* border: 1px solid#000;*/
+        }
+        .page-div h5 {
+            width: 40%;
+            height: 50px;
+           /* border: 1px solid#000;*/
+            margin-top: 30px;
+        }
+         .page-div p{
+            width: 100%;
+            height: 150px;
+           /* border: 1px solid #000;*/
+            text-align: justify;
+        }
+         .page-div button{
+            width: 15%;
+            height: 30px;
+           /* border: 1px solid #000;*/
+            background-color: rgb(22, 93, 100);
+            margin-top: 10px;
+        }
+         .vedio-div{
+            width: 45%;
+            height: 400px;
+           /* border:1px solid #000; */
+            margin-left: 800px;
+            margin-bottom: 600px;  
+        }
+        .article-div{
+            width: 99%;
+            height: 400px;
+            border: 1px solid white;
+            margin-top: 30px;
+            margin-left: 6px;
+        }
+        .article-div-a h4{
+            width: 20%;
+            height: 26px;
+           /* border: 1px solid #000;*/
+            float: left;
+            margin-left: 50px;
+        }
+        .article-div-b h4{
+            width: 20%;
+            height: 26px;
+           /* border: 1px solid #000;*/
+            margin-left: 200px;
+            float: left;
+        }
+        .article-div-c h4{
+            width: 20%;
+            height: 26px;
+           /* border: 1px solid #000000;*/
+            float: right;
+            margin-right: 140px;
+        }
+        .article-a{
+            width: 25%;
+            height: 250px;
+           /* border: 1px solid #000;*/ 
+            margin-left: 40px; 
+            margin-top: 15px;
+            float: left;
+        }
+        .article-b{
+            width: 25%;
+            height: 250px;
+           /* border: 1px solid #000;*/
+            margin-left:130px;
+            margin-top: 15px;
+            float: left;
+        }
+        .article-c{
+            width: 25%;
+            height: 250px;
+           /* border: 1px solid #000;*/
+            margin-right: 70px;
+            float: right;
+            margin-top: 15px;
+        }
+        .article-ap{
+            width: 29.5%;
+            height: 80px;
+           /* border:1px solid #000;*/
+            margin-top: 10px;
+            margin-left: 25px;
+            float: left;
+        }
+        .article-bp{
+            width: 29.5%;
+            height: 80px;
+            /*border:1px solid #000;*/
+            margin-left: 60px;
+            margin-top: 10px;
+            float: left;
+        }.article-cp{
+            width: 29.5%;
+            height: 80px;
+           /* border:1px solid #000;*/
+            margin-left: 1025px;
+            margin-bottom: 90px;
+            margin-top: 299px;
+        }  
+        .box{
+            width: 99%;
+            height: 600px;
+            /* border:2px solid #000; */
+            margin-left: 6px;
+            /* background-color: aliceblue; */
+        }
+        .box-head{
+            width: 100%;
+            height: 60px;
+            /* border: 1px solid #000; */
+        }
+        .box-h{
+            width: 30%;
+            height: 50px;
+            /* border: 1px solid #000; */
+            margin-left: 40px;
+            float: left;
+        }
+        .main-box{
+            width: 17%;
+            height: 50px;
+           /* border:1px solid #000; */
+           float: right;
+           margin-right: 20px; 
+           display: flex;
+        }
+        .box1{
+            width: 50px;
+            height: 50px;
+            border:1px solid #000;
+            line-height: 80px;
+          border-radius: 20px;
+          margin-left: 20px;
+          text-align:left;
+          background-color: orange;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            border:1px solid #000;
+            line-height: 80px;
+          border-radius: 20px;
+          margin-left: 20px;
+          text-align:left;
+          background-color: white;
+        }
+        .box3{
+            width: 50px;
+            height: 50px;
+            border:1px solid #000000;  
+          line-height: 80px;
+          border-radius: 20px;
+          margin-left: 20px;
+          text-align:left;
+          background-color: #01f325 ;
+        }
+       .section-main{
+            width: 64%;
+            height: 450px;
+            /* border:1px solid #000; */
+            position: absolute;
+        }
+        .section1{
+           width: 100px;
+           height: 100px;
+            border:1px solid #000000;  
+            margin-top: 20px;
+            margin-left: 35px;
+            position: absolute;
+            background-color: rgb(39, 149, 149);
+        }
+       
+        .s1
+        { 
+           margin-left: 10em;
+           margin-top: 35px;
+           position: relative;
+        } 
+       .section2
+       { 
+            width:100px;
+            height: 100px;
+            border:1px solid #000000;  
+            margin-top: 65px;
+            margin-left: 35px;
+            position: absolute;
+            background-color: rgb(11, 152, 105);
+        }
+        
+        .s2{ 
+            margin-left: 10em;
+            margin-top: 80px;
+            position:absolute;
+        }
+       
+        .section3
+        {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            margin-left: 35px;
+            margin-top: 200px;
+            position: relative;   
+            background-color: aquamarine;
+        }
+        .s3
+        { 
+            margin-left: 10em;
+            margin-top: 215px;
+            position:absolute;
+        }
+        .box-last
+        {
+            width: 600px;
+            height: 370px;
+            border: 1px solid #000;
+            margin-left: 51em;
+            margin-top: 20px;
+            position: relative; 
+            background-color: rgb(125, 83, 164);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="head-div">
+            <h1>COMPANY</h1>
+                <div class="nav-div">
+                   <nav>
+                      <a href="#">COMPANY</a>
+                      <a href="#">OUR CASES</a>
+                      <a href="#">BLOG</a>
+                      <a href="#">NEWS</a>
+                      <a href="#">CONTACT</a>
+                   </nav>
+                </div>
+                 <h3>999-456-009</h3>
+        </div> 
+            <div class="page">
+                <div class="page-div">
+                    <h1>LANDING PAGE</h1>
+                    <h1> TEMPLATE</h1>
+                    <h5>LOREIPSUM TITLE</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, odio ipsum iure voluptatibus pariatur, saepe nam nobis quam eos aperiam explicabo dignissimos eius! Recusandae tempore quidem nihil magni. Repellendus unde soluta atque a reprehenderit neque facere ea maxime. Explicabo dolores iusto repellat error doloribus esse nihil repudiandae, praesentium sint natus modi, aliquid culpa quae voluptatibus quis reiciendis odit tenetur quia. Eum sapiente rem itaque ratione tempora recusandae dolorem repellendus aliquid beatae, labore aliquam explicabo, nobis quo consequuntur quod facere molestias.t consectetur adipisicing elit. Possimus, odio ipsum iure voluptatibus pariatur, saepe nam nobis quam eos aperiam explicabo dignissimos eius! Recusandae tempore quidem nihil magni. Repellendus unde soluta atque a reprehenderit neque facere ea maxime. Explicabo </p>
+                  <button>Next</button>
+                  </div>
+                  <div class="vedio-div">
+                    <video width="610" height="380" controls>
+                        <source src="vedio/cat video jpg.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        </video>
+                </div>
+            </div>
+
+            <div class="article-div">
+                    <div class="article-div-a">
+                    <h4>DOLOR FIT BOR </h4>
+                </div>
+                   <div class="article-div-b">
+                    <h4>PERMOS DOLOROS</h4>
+                </div>
+                    <div class="article-div-c">
+                    <h4>PERMOS DOLOROS</h4>
+                </div>
+
+                    <div class="article-a"> 
+                        <img  src="images/OIP.png" width="400"
+                        height="250">
+                    </div>
+                    <div class="article-b">
+                        <img src="images/java.jpeg" width="400"
+                        height="250">
+                    </div>
+                    <div class="article-c">
+                        <img src="images/OIPjpg.jpeg" width="400"
+                        height="250">
+                    </div>
+
+               <div class="article-ap">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque porro corporis est reprehenderit facilis libero, odit at, accusantium recusandae, vero veniam perferendis consequuntur?</p>
+                </div>
+                <div class="article-bp">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, quia? Quis rem quam a inventore nemo, similique iste vitae deleniti cumque voluptate ipsum illum!</p>
+                </div>
+                <div class="article-cp">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, praesentium quae dolor recusandae, et est beatae unde repudiandae eius corporis qui ea a amet?</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <div class="box-h">
+                        <h1>COMPANY ADVANTAGES</h1>
+                    </div>
+                    <div class="main-box">
+                    <div class="box1"></div>  
+                    <div class="box2"></div>
+                    <div class="box3"></div>  
+                    </div>
+                </div>
+
+             <div class="section-main">
+
+                <div class="section1"></div>
+                <div class="s1">
+                    <h3>DOLOR FIT BOR</h3>
+                    <p>A aspernatur quae mollitia this repudiandae, <br> cap gimini to this ratione dolores perferendis,</p>
+                </div>
+        
+                    <div class="section2"></div>
+                    <div class="s2">
+                        <h3>DOLOR FIT BOR</h3>
+                        <p>A aspernatur gkeeo mollitia this repudiandae, <br> cap gimini to this ratione dolores perferendis,</p>
+                    </div>
+    
+                   <div class="s3">
+                    <h3>DOLOR FIT BOR</h3>
+                    <p>A aspernatur quae mollitia this repudiandae, <br> cap gimini to this ratione dolores perferendis,</p>
+                   </div>
+                   <div class="section3"></div> 
+            </div>
+                      <div class="box-last"></div>
+            </div>
+        </div>               
+</body>
+</html>

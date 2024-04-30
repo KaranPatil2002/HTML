@@ -1,0 +1,152 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body
+{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 500px;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+.main-header-div
+{
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    flex-basis: 13%;
+}
+.logo
+{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid red; */
+}
+.logo h2
+{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 3.2rem;
+}
+.cardes
+{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 80%;
+    background-color: aqua;
+    justify-content: space-around;
+}
+.box
+{
+    display: flex; 
+    flex-direction: row;
+    margin-top: 30px;
+    width: 20%;
+    height: 325px;
+    background-color: #fff;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+    border: 4px solid aquamarine;
+}
+.box .b1
+{
+    /* border: 1px solid black; */
+    height: 325px;
+    width: 100%;
+}
+.box .imgs
+{
+    display: flex;
+    width: 20%;
+    height: 150px;  
+}
+ .imgs img
+{
+    display: flex;
+    margin-top: 7px;
+    margin-left: 30px;
+    border: radius 100px;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    -ms-border-radius:60px;
+    -o-border-radius:60px;
+    -webkit-border-radius: ;
+}
+.b1  h2
+{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}  
+.box p
+{ 
+    display: flex;
+    margin-left: 50px;
+    margin-top: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.know-more
+{
+   
+    width: 55%;
+    height: 35px;
+    color: white;
+    background-color: black;
+    border: none;
+    margin-left: 45px;
+    margin-top: 10px;
+    border: radius 20px;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+.know-more:hover
+{
+    background-color: orange;
+    color: blueviolet;
+}
+.social
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid navy; */
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social i:hover
+{
+    background-color: orange;
+    color: blueviolet;
+}
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}

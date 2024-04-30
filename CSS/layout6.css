@@ -1,0 +1,148 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+.main-headed-div
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+}
+.main-headed-div .logo
+{
+    display: flex;
+    /* width: 40%;
+    height: 60px; */
+    background-color: royalblue;
+    flex-basis: 44%;
+}.logo h2
+{
+    display: flex;
+    color: #fff;
+    margin: auto;
+    align-items: center;
+}
+.main-headed-div .menu
+{
+    display: flex;
+    /* flex-direction: row; */
+    width:  50%;
+    height: 60px;
+    background-color: royalblue; 
+}.menu a
+{
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+}
+.menu a:hover
+{
+    color: orange;
+    
+}
+.box
+{
+    display: flex;
+    width: 100%;
+    height: 1045px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    flex-direction: column;
+}
+.cards
+{
+    width: 100%;
+    height: 160px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.b1
+{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    /* height: 160px;
+    background-color: grey; */
+}
+.b2
+{
+    display: flex;
+    width: 24%;
+    /* height: 160px; */
+    flex-direction: column;
+    /* background-color: grey; */
+}
+.b3
+{
+    display: flex;
+    width: 24%;
+    /* height: 160px; */
+    flex-direction: column;
+    /* background-color: grey; */
+}.b4
+{
+    display: flex;
+    width: 24%;
+    /* height: 160px; */
+    flex-direction: column;
+    /* background-color: grey;  */
+}
+.play
+{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-between;
+    margin-top: 10px;
+}    
+.sau
+{
+    display: flex;
+    width: 32%;
+    height: 360px;
+  
+    /* border: 1px solid black;
+    background-color: gray; */
+
+}
+.sau img
+{
+    width: 100%;
+}
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: royalblue;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+.footer h2
+{
+    color: #fff;
+}
+
